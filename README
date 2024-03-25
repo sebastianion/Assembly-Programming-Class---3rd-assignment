@@ -1,0 +1,20 @@
+All code comments and additional explanation have been written in Romanian. 
+
+Explicatii suplimentare
+
+Task 1:
+    - se cauta nodul cu valoarea minima din lista;
+    - salvam continutul de la adresa ebp si folosim spatiul pentru a tine cont
+    prin cate noduri mai este nevoie sa trecem pentru a finaliza ordonarea;
+    - dupa ce am gasit minimul absolut al listei, modalitatea prin care
+    legam corect celelalte noduri este ca in eax sa salvam minimul de la pasul
+    anterior; la fiecare pas minimul curent se retine in edi; pentru ca un nod
+    sa devina urmatorul element in serie, trebuie ca valoarea acestuia sa fie
+    cea mai mica valoare mai mare strict decat valoarea minimului precedent;
+    minimul anterior se actualizeaza, numarul de elemente parcurse se
+    incrementeaza ([ebp]).
+
+Task 3:
+    - get_words: pentru a face delimitarea cuvintelor am verificat daca un
+    caracter poate face parte din cuvant, adica daca este ori litera, ori
+    cifra, ori caracterul "-"; se putea folosi mai usor functia strtok.
